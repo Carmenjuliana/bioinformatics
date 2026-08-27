@@ -35,7 +35,7 @@ Luego de dos años y numerosos intentos de modelación por homología y diseño 
 Los siguientes pasos son críticos porque dictan el procedimiento para ejecutar AutoGrid y AutoDock y proporcionan parámetros de acoplamiento precisos. Los archivos coordinados y la información correspondiente deben crearse en un formato específico denominado PDBQT, que contiene tipos de átomos/vínculos, cargas atómicas parciales, etc. En esta versión actualizada, la limpieza visual se hace en ChimeraX y la conversión a PDBQT y los archivos de parámetros se generan por línea de comandos con Open Babel, Meeko y AutoDockTools_py3 (ninguno requiere MGLTools). En esta sección, limitaremos nuestro experimento de docking a la configuración por defecto.
 
 3. Preparación del receptor (target):
-   1. En ChimeraX, abra `target.pdb`, elimine aguas y heteroátomos ajenos a la proteína, y añada hidrógenos:
+   1. En ChimeraX, abra `target.pdb`, elimine H<sub>2</sub>O y heteroátomos ajenos a la proteína, y añada hidrógenos:
       ```
       open target.pdb
       delete solvent
